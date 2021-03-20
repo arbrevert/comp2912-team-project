@@ -37,8 +37,8 @@ app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
 app.post("/login", authController.loginSubmit);
 
-app.listen(3001, function () {
+app.listen(8000, function () {
   console.log(
-    "Server running. Visit: localhost:3001/reminders in your browser 🚀"
+    "Server running. Visit: bcit.compu-ters.ca:8080 in your browser 🚀"
   );
 });

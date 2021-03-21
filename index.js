@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+const port=process.env.PORT || 8000;
+
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -37,8 +41,8 @@ app.get("/login", authController.login);
 app.post("/register", authController.registerSubmit);
 app.post("/login", authController.loginSubmit);
 
-app.listen(8000, function () {
+app.listen(port, function () {
   console.log(
-    "Server running. Visit: bcit.compu-ters.ca:8080 in your browser 🚀"
+    `Server running. Visit: bcit.compu-ters.ca:${port} in your browser 🚀`
   );
 });

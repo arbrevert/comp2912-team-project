@@ -2,19 +2,19 @@ const passport = require("../middleware/auth_passport");
 
 let authController = {
   login: (req, res) => {
-    res.render("auth/login");
+    res.render("auth/login", {error: req.flash('error')});
   },
 
   register: (req, res) => {
+    console.log(req.flash('error'));
     res.render("auth/register");
   },
 
   loginSubmit: (req, res) => {
     console.log("auth");
     (passport.authenticate("local", {
-      //failureFlash:true,
-      //failureRedirect: "/auth/login",
-      failureRedirect: "/",
+      failureFlash:true,
+      failureRedirect: "/auth/login",
       successRedirect:"/reminder",
     }))(req,res)
   },

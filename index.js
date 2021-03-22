@@ -14,7 +14,7 @@ const app = express();
 app.use(morgan(process.env.MORGAN_FORMAT || "tiny"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(ejsLayouts);
 app.set("view engine", "ejs");
 app.use(

@@ -3,15 +3,12 @@ const LocalStrategy = require("passport-local").Strategy;
 const userModel = require("../models/user_model");
 
 const localLogin = new LocalStrategy(
-    // {
-    //     usernameField: "email",
-    //     passwordField: "password",
-    // },
+    {
+        usernameField: "email",
+        passwordField: "password",
+    },
     (email, password, done) => {
-        console.log("local strategy")
         const user = userModel.validateLocalUser(email, password);
-        console.log("auth")
-        console.log(user)
         return user
             ? done(null, user)
             : done(null, false, {

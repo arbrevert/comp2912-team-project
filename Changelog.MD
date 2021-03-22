@@ -1,7 +1,7 @@
 # progress
 
 ## Mar 21
-* grouped reminder and auth
+* grouped routers into reminder and auth
 * auth
   * changed in-memory Database format
   * completed local login

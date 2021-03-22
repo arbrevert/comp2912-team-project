@@ -7,8 +7,16 @@ const userModel = {
             }
         }
         return null;
+    },
+    getUserById: (id) => {
+        u = database[id];
+        if (u) {
+            return {
+                id: id,
+                uname: u.email || u.githubName
+            }
+        }
     }
-
 }
 
 module.exports = userModel;

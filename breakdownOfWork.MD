@@ -2,22 +2,43 @@
 
 (Terry) _Breakdown Of Work Document_ 
 
+
 Mar 18 2021
 
-(Terry & Jason) * Had developer meeting Discussed developer Rolls & Tasks  
+(Terry & Jason) * Had developer meeting Discussed developer Rolls & Tasks.  
                 Jason - Lead Programmer  
                 Terry - Backup Programmer / Admin / Supervisor  
 
-(Jason) Created Trello Account  
-(Terry) will manage it
+(Jason) Created Trello Account.    
+(Terry) will manage it.  
+(Terry) Can not do anything with Trello as I am not the admin - we probably will not bother with it as I dont think its required anymore.
 
-(Terry) Share Trello Board with Armaan 
+(Terry) Share Trello Board with Armaan. 
+
+(Terry) Filled in google docs with names of partners.
+
+(Jason) Created GITHUB Repository and uploaded starter kit.
+
+(Terry) Created clone of repository on my system.
+
+(Terry & Jason) Watched videos on creating reminder app.
+
+(Terry) Will supply the hosting server for the project.
+
+(Terry) Had ideas to include the following  
+        - SQL DataBase  
+        - FaceBook login  
+        - User picture upload  
+        - Twilio SMS messageing  
+(Jason) - Wants to only do the basic design asked for in class, we may incorperate these items after if there is time to do so.
+
 
 
 Mar 19 2021
 
-(Terry) Did review of project instruction from class 4 Video  
-(Terry) Setup various tasks that need to be done for setup of project  
+(Terry) Did review of project instruction from class 4 Video.  
+ 
+(Terry) Setup various tasks that need to be done for setup of project.    
         - dating of file when in use  
         - project coding on listen on port 8000  
         - project production on bcit.compu-ters.ca/8080  
@@ -25,17 +46,36 @@ Mar 19 2021
         - .gitignore file contents (node_modules, .env)  
         - .env file creation with required parameters  
         
-(Terry & Jason) Had developer meeting to discuss the task changes above
+(Terry & Jason) Had developer meeting to discuss the task changes above.
+
+(Terry) Assigned Jason tasks to get done.
+        - Basic user login
+        - Proper routes setup
+        - Delete a reminder
+        - Edit a reminder
+
+
 
 Mar 20 2021
 
-(Terry & Jason) Had developer meeting to discuss moving forward plans
+(Terry & Jason) Had developer meeting to discuss moving forward plans.
 
-(Terry) Reviewed Index.EJS and found issue with NAME fields being ommitted
+(Terry) It was decided Jason only wants to do the basic design so I am going to attempt to do the extra items on my own.
 
-(Terry) Did review of project instruction from class 4 Video
+(Terry) Reviewed Login.EJS and found issue with NAME fields being ommitted.
+
+(Terry) Did review of project instruction from class 4 Video.
+
+(Terry) Asked Jason for his daily notes on what he has been doing so I can enter them in the log.
 
 
 
+Mar 21 2021
 
+(Terry) Did review of project instruction from class 5 Video.
 
+(Terry) Finished updating log files and documentation.
+
+(Terry) Trying to contact Jason for an update on coding -- no code has been loaded to the repository and I would like to see the routes and login completed.
+
+(Terry) Working on Trelio SMS API

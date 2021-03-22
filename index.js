@@ -5,7 +5,7 @@ const path = require("path");
 const ejsLayouts = require("express-ejs-layouts");
 const session=require("express-session");
 const flash=require("connect-flash");
-const passport=require("./middleware/authPassport");
+const passport=require("./middleware/auth_passport");
 const reminderRouter = require("./routes/reminderRoute")
 const authRouter = require("./routes/authRoute")
 

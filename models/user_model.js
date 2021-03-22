@@ -1,6 +1,6 @@
 const database = require("../database")
 const userModel = {
-    validLocalUser: (email, password) => {
+    validateLocalUser: (email, password) => {
         user = {
             id: 1,
             name: "cindy",

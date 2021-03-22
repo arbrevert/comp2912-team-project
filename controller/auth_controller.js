@@ -1,4 +1,4 @@
-const passport = require("passport");
+const passport = require("../middleware/auth_passport");
 
 let authController = {
   login: (req, res) => {
@@ -10,7 +10,13 @@ let authController = {
   },
 
   loginSubmit: (req, res) => {
-    passport.
+    console.log("login summit")
+    console.log(req);
+    passport.authenticate("local", {
+      failureFlash:true,
+      //failureRedirect: "/auth/login",
+      successRedirect:"/reminder",
+    })
   },
 
   registerSubmit: (req, res) => {

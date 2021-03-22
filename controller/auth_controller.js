@@ -12,8 +12,9 @@ let authController = {
   loginSubmit: (req, res) => {
     console.log("auth");
     (passport.authenticate("local", {
-      failureFlash:true,
-      failureRedirect: "/auth/login",
+      //failureFlash:true,
+      //failureRedirect: "/auth/login",
+      failureRedirect: "/",
       successRedirect:"/reminder",
     }))(req,res)
   },

@@ -10,13 +10,12 @@ let authController = {
   },
 
   loginSubmit: (req, res) => {
-    console.log("login summit")
-    console.log(req);
-    passport.authenticate("local", {
+    console.log("auth");
+    (passport.authenticate("local", {
       failureFlash:true,
-      //failureRedirect: "/auth/login",
+      failureRedirect: "/auth/login",
       successRedirect:"/reminder",
-    })
+    }))(req,res)
   },
 
   registerSubmit: (req, res) => {

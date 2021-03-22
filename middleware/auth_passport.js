@@ -10,6 +10,7 @@ const localLogin = new LocalStrategy(
     (email, password, done) => {
         console.log("local strategy")
         const user = userModel.validateLocalUser(email, password);
+        console.log("auth")
         console.log(user)
         return user
             ? done(null, user)
@@ -31,7 +32,5 @@ passport.deserializeUser(function (id, done) {
         done({ message: "User not found" }, null);
     }
 });
-
-console.log("auth_passport")
 
 module.exports = passport.use(localLogin);

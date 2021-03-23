@@ -13,9 +13,10 @@ const userModel = {
         if (u) {
             return {
                 id: id,
-                uname: u.email || u.githubName
+                uname: (u.email || u.githubName)
             }
         }
+        return null;
     }
 }
 

@@ -2,7 +2,9 @@
 
 const reminderRouter = require("express").Router();
 const reminderController = require("../controller/reminder_controller");
+const { isAuthenticatedUser } = require("../middleware/auth_check");
 
+reminderRouter.use(isAuthenticatedUser({ failureRedirect: "/auth/login", failureMessage: "login required" }));
 
 reminderRouter.get("/", reminderController.list);
 
@@ -20,4 +22,4 @@ reminderRouter.post("/update/:id", reminderController.update);
 // Implement this yourself
 reminderRouter.post("/delete/:id", reminderController.delete);
 
-module.exports = reminderRouter; 
+module.exports = reminderRouter;

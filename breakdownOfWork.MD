@@ -94,3 +94,16 @@ Mar 23 2021
 
 (Terry)  Changing login screen to function with (Login With options)
 
+(Terry) Setup FaceBook login Authentication  
+        I am pretty much 100% sure I got facebook setup correctly 
+        Problem is I am using a remote host with my own domain  
+        Facebook requires HTTPS callback for domains
+        So I am not able at this point to verify that that login works
+        Hoping I can get Jason to test (needs a localhost to test)
+
+(Terry) Found bug in Index.js code - Route was not properly defined
+
+(Terry) Created System Design Diagram to aid in requirements
+
+(Terry) Setup routes for Reminder options
+        - view = single-reminder.ejs

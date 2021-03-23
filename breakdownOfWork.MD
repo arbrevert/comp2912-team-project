@@ -76,6 +76,21 @@ Mar 21 2021
 
 (Terry) Finished updating log files and documentation.
 
-(Terry) Trying to contact Jason for an update on coding -- no code has been loaded to the repository and I would like to see the routes and login completed.
+(Terry) Set up Twilio SMS API to send reminder messages
 
-(Terry) Working on Trelio SMS API
+
+
+Mar 22 2021
+
+(Terry)  Found some formatting issues in Index.js
+
+(Terry) Researching Connect-Flash module
+
+(Terry) Setup FaceBook login Authentication
+
+
+
+Mar 23 2021
+
+(Terry)  Changing login screen to function with (Login With options)
+

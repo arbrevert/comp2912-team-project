@@ -15,4 +15,6 @@ MORGAN_FORMAT=tiny
 
 ## notes
 * user uniq identifier is id, it is not necessarily a number (we will keep 'cindy')
-* user_model handles user data, reminder handling code embeded in reminder_controller
+* use connect-flash message to show errors
+* user_model handles user data, reminder_model handles reminder data
+* show user name on navigation bar

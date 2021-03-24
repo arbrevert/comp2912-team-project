@@ -5,7 +5,7 @@
 
 Mar 18 2021
 
-(Terry & Jason) * Had developer meeting Discussed developer Rolls & Tasks.  
+(Jason & Terry) * Had developer meeting Discussed developer Rolls & Tasks.  
                 Jason - Lead Programmer  
                 Terry - Backup Programmer / Admin / Supervisor  
 
@@ -13,15 +13,15 @@ Mar 18 2021
 (Terry) will manage it.  
 (Terry) Can not do anything with Trello as I am not the admin - we probably will not bother with it as I dont think its required anymore.
 
-(Terry) Share Trello Board with Armaan. 
+(Jason) Share Trello Board with Armaan. 
 
 (Terry) Filled in google docs with names of partners.
 
 (Jason) Created GITHUB Repository and uploaded starter kit.
 
-(Terry) Created clone of repository on my system.
+(Jason & Terry) Created clone of repository on my system.
 
-(Terry & Jason) Watched videos on creating reminder app.
+(Jason & Terry) Watched videos on creating reminder app.
 
 (Terry) Will supply the hosting server for the project.
 
@@ -46,27 +46,25 @@ Mar 19 2021
         - .gitignore file contents (node_modules, .env)  
         - .env file creation with required parameters  
         
-(Terry & Jason) Had developer meeting to discuss the task changes above.
+(Jason & Terry) Developer meeting to discuss the task changes above.
 
-(Terry) Assigned Jason tasks to get done.
-        - Basic user login
-        - Proper routes setup
-        - Delete a reminder
-        - Edit a reminder
+(Terry) Assigned Jason tasks to get done.  
+        - Basic user login  
+        - Proper routes setup  
+        - Delete a reminder  
+        - Edit a reminder  
 
 
 
 Mar 20 2021
 
-(Terry & Jason) Had developer meeting to discuss moving forward plans.
+(Jason & Terry) Developer meeting to discuss moving forward plans.
 
 (Terry) It was decided Jason only wants to do the basic design so I am going to attempt to do the extra items on my own.
 
 (Terry) Reviewed Login.EJS and found issue with NAME fields being ommitted.
 
 (Terry) Did review of project instruction from class 4 Video.
-
-(Terry) Asked Jason for his daily notes on what he has been doing so I can enter them in the log.
 
 
 
@@ -97,13 +95,19 @@ Mar 23 2021
 (Terry) Setup FaceBook login Authentication  
         I am pretty much 100% sure I got facebook setup correctly 
         Problem is I am using a remote host with my own domain  
-        Facebook requires HTTPS callback for domains
-        So I am not able at this point to verify that that login works
-        Hoping I can get Jason to test (needs a localhost to test)
+        Facebook requires HTTPS callback for domains  
+        I am not able at this point to verify that that login works  
+        Hoping I can get Jason to test (needs a localhost to test)  
 
 (Terry) Found bug in Index.js code - Route was not properly defined
 
 (Terry) Created System Design Diagram to aid in requirements
 
-(Terry) Setup routes for Reminder options
+(Terry) Created SQL Database Design of DataTables Needed
+
+(Terry) Setup routes for Reminder options  
         - view = single-reminder.ejs
+
+
+
+

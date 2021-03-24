@@ -1,12 +1,15 @@
 # progress
 
+## Commit pending
+* Authenticated users only accesses their own reminders
 ## Mar 23
 * Added "Welcome user name" message
 * Fixed `app.get("/reminder", reminderRouter)` => `app.use("/reminder", reminderRouter)`. Thanks *Terry*
+* Fixed typo `Welcom` => `Welcome`. Thanks *Terry*
+
 
 ## Mar 22
 * Authenticated users have access to /reminder, otherwise redirect to login page with error message
-* Authenticated users only accesses their own reminders
 
 
 ## Mar 21

@@ -34,7 +34,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Reminder
-app.get("/reminder", reminderRouter);
+app.use("/reminder", reminderRouter);
 
 // Auth
 app.use("/auth", authRouter);

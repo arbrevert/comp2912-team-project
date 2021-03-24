@@ -9,4 +9,9 @@
       <a class="nav-item nav-link" href="/reminder/new">Create</a>
     </div>
   </div>
+  <% if (typeof(uname) != 'undefined' && uname ) { %>
+    <div class="container">
+        <h3>Welcom <%= uname %></h3>
+    </div>
+  <% } %>
 </nav>

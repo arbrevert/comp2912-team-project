@@ -66,6 +66,20 @@ Mar 20 2021
 
 (Terry) Did review of project instruction from class 4 Video.
 
+(Jason) add npm script start:dev
+
+(Jason) add dotenv
+
+(Jason) add morgan
+
+(Jason) add express-session
+
+(Jason) add connect-flash
+
+(Jason) add passport
+
+(Jason) add passport-local
+
 
 
 Mar 21 2021
@@ -76,21 +90,29 @@ Mar 21 2021
 
 (Terry) Set up Twilio SMS API to send reminder messages
 
+(Jason) Grouped routers into reminder and auth
+
+(Jason) changed in-memory Database format
+
+(Jason) completed local login
+
 
 
 Mar 22 2021
 
-(Terry)  Found some formatting issues in Index.js
+(Terry) Found some formatting issues in Index.js
 
 (Terry) Researching Connect-Flash module
 
 (Terry) Setup FaceBook login Authentication
 
+(Jason) Authenticated users have access to /reminder, otherwise redirect to login page with error message
+
 
 
 Mar 23 2021
 
-(Terry)  Changing login screen to function with (Login With options)
+(Terry) Changing login screen to function with (Login With options)
 
 (Terry) Setup FaceBook login Authentication  
         I am pretty much 100% sure I got facebook setup correctly 
@@ -105,9 +127,44 @@ Mar 23 2021
 
 (Terry) Created SQL Database Design of DataTables Needed
 
-(Terry) Setup routes for Reminder options  
+(Terry) Modify Views for Reminder options  
         - view = single-reminder.ejs
 
+(Jason) Added "Welcome user name" message
+
+(Jason) Fixed app.get("/reminder", reminderRouter) => app.use("/reminder", reminderRouter). Thanks Terry
+
+(Terry) Transfered Jason's work to-date to this document
+
+
+
+Mar 24 2021
+
+(Terry) Transfered Jason's work to-date to this document
+
+(Jason) Added reminder_module
+
+(Jason) Authenticated users only accesses their own reminders (reminder_module)  
+
+(Jason) Refactored reminder_controller (uses reminder_module)
+
+(Jason) Implemented 'edit'
+
+(Jason) Implemented 'delete'
+
+(Jason & Terry) Had developer meeting to discuss items outstanding.
+
+(Terry) Had system error PORT ALREADY IN USE - had to research and fix
+
+(Terry) Fix NavBar to only display when needed
+
+(Terry) Modify Views for Reminder ROUTE options  
+        - reminders = index.ejs
+        - view = single-reminder.ejs
+        - create = create.ejs
+                - added phone number
+                - added Date/Time
+                
 
 
 

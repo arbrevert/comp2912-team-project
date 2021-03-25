@@ -158,12 +158,15 @@ Mar 24 2021
 
 (Terry) Fix NavBar to only display when needed
 
-(Terry) Modify Views for Reminder ROUTE options  
-        - reminders = index.ejs
-        - view = single-reminder.ejs
-        - create = create.ejs
-                - added phone number
-                - added Date/Time
+(Terry) Modify Views for Reminder ROUTE options    
+        - reminders = index.ejs  
+        - view = single-reminder.ejs  
+        - create = create.ejs  
+                - added phone number  
+                - added Date/Time  
+
+
+                
                 
 
 

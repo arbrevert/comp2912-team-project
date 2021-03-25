@@ -32,6 +32,7 @@ const remindersController = {
     const reminder = {
       title: req.body.title,
       description: req.body.description,
+      dueDate: req.body.dueDate,
     };
     reminderModel.addReminderToUserId(req.user.id, reminder);
     res.redirect("/reminder");
@@ -51,8 +52,10 @@ const remindersController = {
       id: req.params.id,
       title: req.body.title,
       description: req.body.description,
-      completed: Boolean(req.body.completed),
+      completed: (req.body.completed != 'false'),
+      dueDate: req.body.dueDate,
     };
+    console.log(newReminder)
     reminderModel.updateReminderByUserIdReminderId(req.user.id, req.params.id, newReminder);
     res.redirect("/reminder");
   },

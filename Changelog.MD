@@ -2,7 +2,8 @@
 
 ## Pending
 * error handling
-
+## Mar 25
+* Completed reminder due date
 ## Mar 24
 * Added reminder_module
 * Authenticated users only accesses their own reminders (reminder_module)

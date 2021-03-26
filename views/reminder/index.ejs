@@ -6,7 +6,7 @@
     <li class="list-group-item">
       <strong><%= reminderItem.title %>: </strong>
       <%= reminderItem.description %>
-      <% if (typeof(reminderItem.dueDate) != 'undefined') { %>
+      <% if (typeof(reminderItem.dueDate) !== 'undefined') { %>
         || Due: <%= reminderItem.dueDate %>
       <% } %>
       || Completed:

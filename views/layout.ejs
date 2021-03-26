@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <% include ./partials/navbar %>
+    <% if (typeof(navbarIdx) === 'undefined' || navbarIdx == 1) { %>
+      <% include ./partials/navbar %>
+    <% } else if (navbarIdx == 2) {%>
+      <% include ./partials/navbar-not-logged-in %>
+    <% } %>
+    <% include ./partials/welcome-message %>
     <%- body %>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   </body>

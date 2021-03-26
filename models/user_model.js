@@ -17,6 +17,13 @@ const userModel = {
             }
         }
         return null;
+    },
+    getFriendsById: (id) => {
+        u = database[id];
+        if (typeof(u.friends) !== 'undefined' && Array.isArray(u.friends)) {
+            return u.friends.map(userModel.getUserById);
+        }
+        return null;
     }
 }
 

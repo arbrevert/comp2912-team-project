@@ -16,10 +16,8 @@ reminderRouter.get("/:id/edit", reminderController.edit);
 
 reminderRouter.post("/", reminderController.create);
 
-// Implement this yourself
 reminderRouter.post("/update/:id", reminderController.update);
 
-// Implement this yourself
 reminderRouter.post("/delete/:id", reminderController.delete);
 
 module.exports = reminderRouter;

@@ -4,6 +4,10 @@
 * error handling
 ## Mar 25
 * Completed reminder due date
+* Took the advises from *Terry*
+ * change some `!=` to `!==` in ejs
+ * show different navbar for if not logged in
+ * show welcome message in 2 lines instead of 1 line
 ## Mar 24
 * Added reminder_module
 * Authenticated users only accesses their own reminders (reminder_module)

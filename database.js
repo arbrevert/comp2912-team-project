@@ -13,7 +13,8 @@ let Database = {
         reminders: [
             {id: 1, title: "abc", description: "abcabc", completed: false},
             {id: 2, title: "abc", description: "abcabc", completed: false, dueDate:"2021-04-01"},
-        ]
+        ],
+        friends: [2],
     },
     2: {
         email:"alex@gmail.com", src:"local", password:"alex",

@@ -4,6 +4,7 @@
 * error handling
 
 ## Mar 27
+* Completed tags add/edit/delete
 * Deployed to Heroku
 ## Mar 26
 * Fixed the reminder id issue. Thanks *Terry*

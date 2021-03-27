@@ -56,6 +56,7 @@ const remindersController = {
       description: req.body.description,
       completed: (req.body.completed != 'false'),
       dueDate: req.body.dueDate,
+      tags: req.body.tags.split(',').map(t => t.trim())
     };
     console.log(newReminder)
     reminderModel.updateReminderByUserIdReminderId(req.user.id, req.params.id, newReminder);

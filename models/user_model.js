@@ -23,7 +23,7 @@ const userModel = {
         if (typeof(u.friends) !== 'undefined' && Array.isArray(u.friends)) {
             return u.friends.map(userModel.getUserById);
         }
-        return null;
+        return [];
     }
 }
 

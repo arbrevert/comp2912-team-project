@@ -1,4 +1,6 @@
-const database = require("../database")
+const database = require("../database");
+const userModel = require("./user_model");
+
 const reminderModel = {
     getRemindersByUserId: (id) => {
         u = database[id];
@@ -32,6 +34,13 @@ const reminderModel = {
         i = reminders.findIndex(r => r.id == rid);
         reminders.splice(i, 1);
     },
+    getFriendsRemindersList: (uid) => {
+        friendsRemindersList = userModel.getFriendsById(uid).map((u)=>{
+            r = reminderModel.getRemindersByUserId(u.id);
+            return {user: u, reminders: r};
+        })
+        return friendsRemindersList;
+    }
 }
 
 module.exports = reminderModel;

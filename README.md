@@ -18,3 +18,4 @@ MORGAN_FORMAT=tiny
 * use connect-flash message to show errors
 * user_model handles user data, reminder_model handles reminder data
 * show user name on navigation bar
+* Show reminders of friends on 'Reminder List' page

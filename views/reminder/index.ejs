@@ -19,5 +19,33 @@
     </li>
   <% }) %>
 </ul>
-
 </div>
+
+<% if (typeof(friendsRemindersList) !== 'undefined') { %>
+  <% friendsRemindersList.forEach((fr) => { %>
+  <div class="container">
+  <h2 class="page-header"><%= fr.user.uname %>'s Reminders</h2>
+
+  <ul class="list-group">
+    <% fr.reminders.forEach(function (reminderItem) { %>
+      <li class="list-group-item">
+        <strong><%= reminderItem.title %>: </strong>
+        <%= reminderItem.description %>
+        <% if (typeof(reminderItem.dueDate) !== 'undefined') { %>
+          || Due: <%= reminderItem.dueDate %>
+        <% } %>
+        || Completed:
+        <% if (reminderItem.completed == true) { %>
+          <span class="badge badge-success">True</span>
+        <% } else if (reminderItem.completed == false) { %>
+          <span class="badge badge-danger">False</span>
+        <% } %>
+        <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
+      </li>
+    <% }) %>
+  </ul>
+
+  <% }); %>
+  </div>
+<% } %>
+

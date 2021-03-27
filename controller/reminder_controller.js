@@ -4,10 +4,14 @@ const userModel = require("../models/user_model");
 const remindersController = {
   list: (req, res) => {
     console.log("reminderController list");
-    console.log(userModel.getFriendsById(req.user.id));
     const user = userModel.getUserById(req.user.id);
     const reminders = reminderModel.getRemindersByUserId(req.user.id);
-    res.render("reminder/index", { uname: user.uname, reminders: reminders });
+    const friendsRemindersList = reminderModel.getFriendsRemindersList(req.user.id);
+    console.log("*************")
+    console.log(friendsRemindersList)
+    console.log("*************")
+    r=friendsRemindersList
+    res.render("reminder/index", { uname: user.uname, reminders: reminders, friendsRemindersList: friendsRemindersList, r, p:4 });
   },
 
   new: (req, res) => {

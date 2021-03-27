@@ -163,10 +163,12 @@ Mar 23 2021
 
         Tags  
                 Id (PK)  
+                user_id (FK)
                 reminder_id (FK)  
 
         Subtasks  
                 Id (PK)  
+                user_id (FK)
                 reminder_id (FK)  
 
 

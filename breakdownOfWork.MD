@@ -80,6 +80,8 @@ Mar 20 2021
 
 (Jason) add passport-local
 
+(Terry) System Testing
+
 
 
 Mar 21 2021
@@ -96,6 +98,8 @@ Mar 21 2021
 
 (Jason) completed local login
 
+(Terry) System Testing
+
 
 
 Mar 22 2021
@@ -107,6 +111,8 @@ Mar 22 2021
 (Terry) Setup FaceBook login Authentication
 
 (Jason) Authenticated users have access to /reminder, otherwise redirect to login page with error message
+
+(Terry) System Testing
 
 
 
@@ -130,11 +136,13 @@ Mar 23 2021
 (Terry) Modify Views for Reminder options  
         - view = single-reminder.ejs
 
+(Terry) Transfered Jason's work to-date to this document
+
 (Jason) Added "Welcome user name" message
 
 (Jason) Fixed app.get("/reminder", reminderRouter) => app.use("/reminder", reminderRouter). Thanks Terry
 
-(Terry) Transfered Jason's work to-date to this document
+(Terry) System Testing
 
 
 
@@ -152,9 +160,16 @@ Mar 24 2021
 
 (Jason) Implemented 'delete'
 
+(Terry) System Testing
+
 (Jason & Terry) Had developer meeting to discuss items outstanding.
 
-(Terry) Had system error PORT ALREADY IN USE - had to research and fix
+(Terry) Had system error PORT ALREADY IN USE
+        EADDRINUSE-ADDRESS-ALREADY
+        https://stackoverflow.com/questions/4075287/node-express-eaddrinuse-address-already-in-use-kill-server
+
+        lsof -i tcp:8000
+        kill -9 <PID>
 
 (Terry) Fix NavBar to only display when needed
 
@@ -166,8 +181,29 @@ Mar 24 2021
                 - added Date/Time  
 
 
-                
-                
 
+Mar 25 2021
+                
+(Terry) Transfered Jason's work to-date to this document
 
+(Jason) Completed reminder due date
+
+(Terry) System Testing
+
+(Terry) Setup console.log on Browser
+        https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27  
+
+        - nodemon --inspect file.js
+        - in Chrome URL = about:inspect
+        - Click Link = Open dedicated DevTools for Node
+
+(Terry) Setup Node ngrok allow facebook to use HTTPS 
+
+(Terry) Added Gitbhub passport login
+        - cant get facebook without HTTPS so I will test with Github
+
+(Terry) Modify Views for Reminder ROUTE options    
+        - reminders = index.ejs
+                - fixing Date Time Display
+ 
 

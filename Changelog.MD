@@ -2,6 +2,8 @@
 
 ## Pending
 * error handling
+## Mar 26
+* Fixed the reminder id issue. Thanks *Terry*
 ## Mar 25
 * Completed reminder due date
 * Took the advises from *Terry*

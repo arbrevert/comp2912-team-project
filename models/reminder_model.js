@@ -17,18 +17,20 @@ const reminderModel = {
     },
     addReminderToUserId: (id, reminder) => {
         reminders = reminderModel.getRemindersByUserId(id);
-        reminder.id = reminders.length + 1;
+        //reminder.id = reminders.length + 1;
+        reminder.id = Math.max(...(reminders.map(r=>{return r.id}))) + 1;
         reminder.completed = false;
         reminders.push(reminder);
     },
     updateReminderByUserIdReminderId: (uid, rid, newReminder) => {
         reminders = reminderModel.getRemindersByUserId(uid);
-        reminders[rid - 1] = newReminder;
+        i = reminders.findIndex(r => r.id == rid);
+        reminders[i] = newReminder;
     },
     deleteReminderByUserIdReminderId: (uid, rid) => {
-        console.log("delete")
         reminders = reminderModel.getRemindersByUserId(uid);
-        reminders.splice(rid - 1, 1);
+        i = reminders.findIndex(r => r.id == rid);
+        reminders.splice(i, 1);
     },
 }
 

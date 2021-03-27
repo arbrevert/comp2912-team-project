@@ -259,11 +259,12 @@ Mar 26 2021
 
 (Terry) System Testing
 
-(Terry) Added Gitbhub passport login
-        - spent a lot of time yesterday trying to get this working
-        - got very very frustrated
-        - trying again today with new approch
-        - still did not work
+(Terry) Added Gitbhub passport login  
+
+        - spent a lot of time yesterday trying to get this working  
+        - got very very frustrated  
+        - trying again today with new approch  
+        - still did not work  
 
 (Terry) Wont be doing login with options -- passport is not cooperating
 

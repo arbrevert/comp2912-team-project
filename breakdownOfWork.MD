@@ -18,6 +18,7 @@ Armaan - inorder to check certain things you will need to setup your own account
 Mar 18 2021
 
 (Jason & Terry) * Had developer meeting Discussed developer Rolls & Tasks.  
+
                 Jason - Lead Programmer  
                 Terry - Backup Programmer / Admin / Supervisor  
 
@@ -38,10 +39,12 @@ Mar 18 2021
 (Terry) Will supply the hosting server for the project.
 
 (Terry) Had ideas to include the following  
+
         - SQL DataBase  
         - FaceBook login  
         - User picture upload  
         - Twilio SMS messageing  
+
 (Jason) - Wants to only do the basic design asked for in class, we may incorperate these items after if there is time to do so.
 
 
@@ -51,6 +54,7 @@ Mar 19 2021
 (Terry) Did review of project instruction from class 4 Video.  
  
 (Terry) Setup various tasks that need to be done for setup of project.    
+
         - dating of file when in use  
         - project coding on listen on port 8000  
         - project production on bcit.compu-ters.ca/8080  
@@ -61,6 +65,7 @@ Mar 19 2021
 (Jason & Terry) Developer meeting to discuss the task changes above.
 
 (Terry) Assigned Jason tasks to get done.  
+
         - Basic user login  
         - Proper routes setup  
         - Delete a reminder  
@@ -133,6 +138,7 @@ Mar 23 2021
 (Terry) Changing login screen to function with (Login With options)
 
 (Terry) Setup FaceBook login Authentication  
+
         I am pretty much 100% sure I got facebook setup correctly 
         Problem is I am using a remote host with my own domain  
         Facebook requires HTTPS callback for domains  
@@ -144,6 +150,7 @@ Mar 23 2021
 (Terry) Created System Design Diagram to aid in requirements
 
 (Terry) Created SQL Database Design of DataTables Needed  
+
         - does not look like i will get around to this  
         - here is the design i was planning  
         
@@ -173,6 +180,7 @@ Mar 23 2021
 
 
 (Terry) Modify Views for Reminder options  
+
         - view = single-reminder.ejs
 
 (Terry) Transfered Jason's work to-date to this document
@@ -204,6 +212,7 @@ Mar 24 2021
 (Jason & Terry) Had developer meeting to discuss items outstanding.
 
 (Terry) Had system error PORT ALREADY IN USE
+
         EADDRINUSE-ADDRESS-ALREADY
         https://stackoverflow.com/questions/4075287/node-express-eaddrinuse-address-already-in-use-kill-server
 
@@ -212,8 +221,9 @@ Mar 24 2021
 
 (Terry) Fix NavBar to only display when needed
 
-(Terry) Modify Views for Reminder ROUTE options    
-        - reminders = index.ejs  
+(Terry) Modify Views for Reminder ROUTE options  
+
+        - reminders = index.ejs    
         - view = single-reminder.ejs  
         - create = create.ejs  
                 - added phone number  
@@ -230,6 +240,7 @@ Mar 25 2021
 (Terry) System Testing
 
 (Terry) Setup console.log on Browser
+
         https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27  
 
         - nodemon --inspect file.js
@@ -309,4 +320,7 @@ Mar 27 2021
 (Terry) System Testing
 
 (Terry) Added in verify password on user signup 
+
+(Terry) Reomoving debugging Console Log Statements
+
 

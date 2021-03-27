@@ -15,6 +15,23 @@
             <span class="label label-danger">False</span>
           <% } %>
         </h4>
+        <% if (typeof(reminderItem.tags) !== 'undefined') { %>
+          <h4>Tags:
+          <% reminderItem.tags.forEach(tag => { %>
+            <span class="bg-info text-light"><%= tag %></span>
+          <% }); %>
+          </h4>
+        <% } %>
+        <% if (typeof(reminderItem.subTasks) !== 'undefined') { %>
+          <h4><span><%= reminderItem.subTasks.length %> subtasks</span></h4>
+            <ul>
+            <% reminderItem.subTasks.forEach(task => { %>
+              <li>
+              <span><%= task %></span>
+              </li>
+            <% }); %>
+            </ul>
+        <% } %>
 
         <a class="btn btn-warning" href=<%= "/reminder/" + reminderItem.id + "/edit" %>>Edit</a>
 

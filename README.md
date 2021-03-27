@@ -14,6 +14,7 @@ MORGAN_FORMAT=tiny
 ```
 
 ## notes
+* new registered users do not need to login again
 * user uniq identifier is id, it is not necessarily a number (we will keep 'cindy')
 * use connect-flash message to show errors
 * user_model handles user data, reminder_model handles reminder data

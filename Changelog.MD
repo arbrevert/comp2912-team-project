@@ -7,6 +7,8 @@
 * Display friends' reminders on the reminder list page, not show tags and subtasks
 * Display tags (list page, list one page)
 * Display subtasks (summary on list page, details on list one page)
+* Completed user registration
+* Completed user logout
 ## Mar 25
 * Completed reminder due date
 * Took the advises from *Terry*

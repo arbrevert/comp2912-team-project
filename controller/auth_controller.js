@@ -1,13 +1,17 @@
 const passport = require("../middleware/auth_passport");
+const userModel = require("../models/user_model");
 
-let authController = {
+const authController = {
   login: (req, res) => {
     res.render("auth/login", {error: req.flash('error'), navbarIdx: 2});
   },
+  logout: (req, res) => {
+    req.logout();
+    res.redirect("/");
+  },
 
   register: (req, res) => {
-    console.log(req.flash('error'));
-    res.render("auth/register", {error: req.flash('error'), navbarIdx: 2});
+    res.render("auth/register", {error: req.flash('error'), navbarIdx: 2, email:req.query.email});
   },
 
   loginSubmit: (req, res) => {
@@ -19,7 +23,15 @@ let authController = {
   },
 
   registerSubmit: (req, res) => {
-    // implement
+    console.log("submit")
+    console.log(req.body);
+    err=userModel.addLocaluser(req.body.email, req.body.password);
+    if (err) {
+      req.flash('error', err);
+      res.redirect("/auth/register")
+    } else {
+      authController.loginSubmit(req,res)
+    }
   },
 };
 

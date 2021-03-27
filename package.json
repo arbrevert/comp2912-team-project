@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "start:dev": "nodemon --inspect"
-
   },
   "repository": {
     "type": "git",
@@ -17,6 +16,7 @@
   "license": "ISC",
   "homepage": "http",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^8.2.0",
     "ejs": "^2.5.5",

@@ -238,10 +238,12 @@ Mar 25 2021
 
 (Terry) Setup Node ngrok allow facebook to use HTTPS 
 
-(Terry) Added Gitbhub passport login
+(Terry) Added Gitbhub passport login  
+
         - cant get facebook without HTTPS so I will test with Github
 
 (Terry) Modify Views for Reminder ROUTE options    
+        
         - reminders = index.ejs
                 - fixing Date Time Display
  

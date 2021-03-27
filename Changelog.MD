@@ -2,6 +2,9 @@
 
 ## Pending
 * error handling
+
+## Mar 27
+* Deployed to Heroku
 ## Mar 26
 * Fixed the reminder id issue. Thanks *Terry*
 * Display friends' reminders on the reminder list page, not show tags and subtasks

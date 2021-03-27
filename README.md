@@ -1,6 +1,7 @@
 # comp2912-team-project
 
 ## Links
+* Deployment: https://comp2912-reminder.herokuapp.com/
 * Trello board \[Jason\]: https://trello.com/b/i2tUrcdA
 * Change log/progress journal \[Jason\]: https://github.com/arbrevert/comp2912-team-project/blob/main/Changelog.MD
 * Breakdown \[Terry\]: https://github.com/arbrevert/comp2912-team-project/blob/main/breakdownOfWork.MD

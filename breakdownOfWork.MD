@@ -272,10 +272,13 @@ Mar 26 2021
 (Terry) Setup Twilio on create of reminder to send SMS
 
 (Terry) Modify Views for Reminder ROUTE options      
+        
         - reminders = index.ejs  
                 - fixing Date Time Display  
                 - fixing phone number Display  
+        
         - Added phone number to database  
+        
         - view = single-reminder.ejs  
                 - fixing Date Time Display  
                 fising phone number display  

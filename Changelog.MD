@@ -6,9 +6,10 @@
 ## Mar 27
 * Completed tags add/edit/delete
 * Deployed to Heroku
+* Changed SERVERNAME to be configurable in env file
 ## Mar 26
 * Fixed the reminder id issue. Thanks *Terry*
-* Display friends' reminders on the reminder list page, not show tags and subtasks
+* Display friends' reminders on the reminder list page, will not show tags and subtasks
 * Display tags (list page, list one page)
 * Display subtasks (summary on list page, details on list one page)
 * Completed user registration

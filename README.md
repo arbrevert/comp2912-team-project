@@ -8,7 +8,8 @@
 
 ## .env template
 ```
-# app port
+# server name and app port
+SERVERNAME=localhost
 PORT=8000
 # morgan format combined|common|dev|short|tiny
 MORGAN_FORMAT=tiny

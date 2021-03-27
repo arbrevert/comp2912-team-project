@@ -11,6 +11,7 @@ const reminderRouter = require("./routes/reminderRoute")
 const authRouter = require("./routes/authRoute")
 
 const port=process.env.PORT || 8000;
+const serverName=process.env.SERVERNAME || "localhost"
 const app = express();
 app.use(morgan(process.env.MORGAN_FORMAT || "tiny"));
 app.use(express.static(path.join(__dirname, "public")));
@@ -43,6 +44,6 @@ app.use("/auth", authRouter);
 // start
 app.listen(port, function () {
   console.log(
-    `Server running. Visit: bcit.compu-ters.ca:${port} in your browser 🚀`
+    `Server running. Visit: ${serverName}:${port} in your browser 🚀`
   );
 });

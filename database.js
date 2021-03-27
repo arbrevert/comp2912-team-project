@@ -11,7 +11,10 @@ let Database = {
     cindy: {
         email:"cindy@gmail.com", src:"local", password:"cindy",
         reminders: [
-            {id: 1, title: "abc", description: "abcabc", completed: false},
+            {id: 1, title: "abc", description: "abcabc", completed: false, 
+             tags: ['t1', 't2', 't3'], 
+             subTasks:['subtask1', 'subtask2', 'subtask3'],
+            },
             {id: 2, title: "abc", description: "abcabc", completed: false, dueDate:"2021-04-01"},
         ],
         friends: [2],

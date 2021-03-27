@@ -4,7 +4,7 @@
 * error handling
 ## Mar 26
 * Fixed the reminder id issue. Thanks *Terry*
-* Display friends' reminders on the reminder list page
+* Display friends' reminders on the reminder list page, not show tags and subtasks
 ## Mar 25
 * Completed reminder due date
 * Took the advises from *Terry*

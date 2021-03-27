@@ -15,6 +15,16 @@
       <% } else if (reminderItem.completed == false) { %>
         <span class="badge badge-danger">False</span>
       <% } %>
+      ||
+      <% if (typeof(reminderItem.tags) !== 'undefined') { %>
+        <% reminderItem.tags.forEach(tag => { %>
+          <span class="bg-info text-light"><%= tag %></span>
+        <% }); %>
+      <% } %>
+      || 
+      <% if (typeof(reminderItem.subTasks) !== 'undefined') { %>
+          <span><%= reminderItem.subTasks.length %> subtasks</span>
+      <% } %>
       <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
     </li>
   <% }) %>
@@ -40,7 +50,6 @@
         <% } else if (reminderItem.completed == false) { %>
           <span class="badge badge-danger">False</span>
         <% } %>
-        <a class="pull-right" href=<%= "/reminder/" + reminderItem.id %>>View</a>
       </li>
     <% }) %>
   </ul>

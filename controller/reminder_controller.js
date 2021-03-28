@@ -7,7 +7,6 @@ const remindersController = {
     const user = userModel.getUserById(req.user.id);
     const reminders = reminderModel.getRemindersByUserId(req.user.id);
     const friendsRemindersList = reminderModel.getFriendsRemindersList(req.user.id);
-    r=friendsRemindersList
     res.render("reminder/index", { uname: user.uname, reminders: reminders, friendsRemindersList: friendsRemindersList });
   },
 
@@ -49,7 +48,6 @@ const remindersController = {
 
   update: (req, res) => {
     console.log("reminderController update");
-    console.log(req.body);
     const newReminder = {
       id: req.params.id,
       title: req.body.title,
@@ -58,7 +56,6 @@ const remindersController = {
       dueDate: req.body.dueDate,
       tags: req.body.tags.split(',').map(t => t.trim())
     };
-    console.log(newReminder)
     reminderModel.updateReminderByUserIdReminderId(req.user.id, req.params.id, newReminder);
     res.redirect("/reminder");
   },

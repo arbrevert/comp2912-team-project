@@ -23,19 +23,19 @@ const userModel = {
         console.log(database)
     },
     getUserById: (id) => {
-        u = database[id];
-        if (u) {
+        user = database[id];
+        if (user) {
             return {
                 id: id,
-                uname: (u.email || u.githubName)
+                uname: (user.email || user.githubName)
             }
         }
         return null;
     },
     getFriendsById: (id) => {
-        u = database[id];
-        if (typeof (u.friends) !== 'undefined' && Array.isArray(u.friends)) {
-            return u.friends.map(userModel.getUserById);
+        user = database[id];
+        if (typeof (user.friends) !== 'undefined' && Array.isArray(user.friends)) {
+            return user.friends.map(userModel.getUserById);
         }
         return [];
     }

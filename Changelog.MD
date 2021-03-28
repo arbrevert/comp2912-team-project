@@ -7,6 +7,10 @@
 * Completed tags add/edit/delete
 * Deployed to Heroku
 * Changed SERVERNAME to be configurable in env file
+* Made the following changes. Thanks *Terry*
+  * Replaced single letter variable names
+  * Removed debug lines
+  * Added password confirmation on registration page
 ## Mar 26
 * Fixed the reminder id issue. Thanks *Terry*
 * Display friends' reminders on the reminder list page, will not show tags and subtasks
@@ -16,7 +20,7 @@
 * Completed user logout
 ## Mar 25
 * Completed reminder due date
-* Took the advises from *Terry*
+* Made the following changes. Thanks *Terry*
   * change some `!=` to `!==` in ejs
   * show different navbar if not logged in
   * show welcome message in 2 lines instead of 1 line

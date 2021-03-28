@@ -3,18 +3,18 @@ const userModel = require("./user_model");
 
 const reminderModel = {
     getRemindersByUserId: (id) => {
-        u = database[id];
-        if (u) {
-            return u.reminders;
+        user = database[id];
+        if (user) {
+            return user.reminders;
         }
         return null;
     },
     getReminderByUserIdReminderId: (uid, rid) => {
         reminders = reminderModel.getRemindersByUserId(uid);
-        r = reminders.find((reminder) => {
+        reminder = reminders.find((reminder) => {
             return reminder.id == rid
         });
-        if (r) return r;
+        if (reminder) return reminder;
         return null;
     },
     addReminderToUserId: (id, reminder) => {
@@ -26,18 +26,18 @@ const reminderModel = {
     },
     updateReminderByUserIdReminderId: (uid, rid, newReminder) => {
         reminders = reminderModel.getRemindersByUserId(uid);
-        i = reminders.findIndex(r => r.id == rid);
-        reminders[i] = newReminder;
+        idx = reminders.findIndex(r => r.id == rid);
+        reminders[idx] = newReminder;
     },
     deleteReminderByUserIdReminderId: (uid, rid) => {
         reminders = reminderModel.getRemindersByUserId(uid);
-        i = reminders.findIndex(r => r.id == rid);
-        reminders.splice(i, 1);
+        idx = reminders.findIndex(r => r.id == rid);
+        reminders.splice(idx, 1);
     },
     getFriendsRemindersList: (uid) => {
         friendsRemindersList = userModel.getFriendsById(uid).map((u)=>{
-            r = reminderModel.getRemindersByUserId(u.id);
-            return {user: u, reminders: r};
+            reminder = reminderModel.getRemindersByUserId(u.id);
+            return {user: u, reminders: reminder};
         })
         return friendsRemindersList;
     }

@@ -24,6 +24,10 @@
         <% } %>
         <% if (typeof(reminderItem.subTasks) !== 'undefined') { %>
           <h4><span><%= reminderItem.subTasks.length %> subtasks</span></h4>
+        <% } else { %>
+          <h4><span>No subtask</span></h4>
+        <% } %>
+        <% if (typeof(reminderItem.subTasks) !== 'undefined') { %>
             <ul>
             <% reminderItem.subTasks.forEach(task => { %>
               <li>

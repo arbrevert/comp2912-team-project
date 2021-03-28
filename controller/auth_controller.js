@@ -3,7 +3,7 @@ const userModel = require("../models/user_model");
 
 const authController = {
   login: (req, res) => {
-    res.render("auth/login", {error: req.flash('error'), navbarIdx: 2});
+    res.render("auth/login", { error: req.flash('error'), navbarIdx: 2 });
   },
   logout: (req, res) => {
     req.logout();
@@ -11,26 +11,30 @@ const authController = {
   },
 
   register: (req, res) => {
-    res.render("auth/register", {error: req.flash('error'), navbarIdx: 2, email:req.query.email});
+    res.render("auth/register", { error: req.flash('error'), navbarIdx: 2, email: req.query.email });
   },
 
   loginSubmit: (req, res) => {
     (passport.authenticate("local", {
-      failureFlash:true,
+      failureFlash: true,
       failureRedirect: "/auth/login",
-      successRedirect:"/reminder",
-    }))(req,res)
+      successRedirect: "/reminder",
+    }))(req, res)
   },
 
   registerSubmit: (req, res) => {
-    console.log("submit")
-    console.log(req.body);
-    err=userModel.addLocaluser(req.body.email, req.body.password);
-    if (err) {
-      req.flash('error', err);
-      res.redirect("/auth/register")
+    if (req.body.password === req.body.passwordConfirmation) {
+      err = userModel.addLocaluser(req.body.email, req.body.password);
+      if (err) {
+        req.flash('error', err);
+        res.redirect("/auth/register");
+      } else {
+        authController.loginSubmit(req, res);
+
+      }
     } else {
-      authController.loginSubmit(req,res)
+      req.flash('error', 'passwords did not match!');
+      res.render("auth/register", { error: req.flash('error'), navbarIdx: 2, email: req.body.email });
     }
   },
 };

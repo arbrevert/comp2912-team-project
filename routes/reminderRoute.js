@@ -20,4 +20,6 @@ reminderRouter.post("/update/:id", reminderController.update);
 
 reminderRouter.post("/delete/:id", reminderController.delete);
 
+reminderRouter.post("/addSubtask/:id", reminderController.addSubtask);
+
 module.exports = reminderRouter;

@@ -27,6 +27,12 @@
         <% } else { %>
           <h4><span>No subtask</span></h4>
         <% } %>
+        <form action=<%= "/reminder/addSubtask/" + reminderItem.id %> method="POST">
+          <div class="form-group">
+            <input type="text" name="newSubtask" class="form-control" id="newSubtaskInput" placeholder="new subtask" value="">
+          </div>
+          <button type="submit" class="btn btn-primary">Add subtask</button>
+        </form>
         <% if (typeof(reminderItem.subTasks) !== 'undefined') { %>
             <ul>
             <% reminderItem.subTasks.forEach(task => { %>

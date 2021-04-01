@@ -1,7 +1,7 @@
 # progress
 
-## Pending
-* error handling
+## Mar 31
+* 
 
 ## Mar 27
 * Completed tags add/edit/delete

@@ -20,7 +20,7 @@ const reminderModel = {
     addReminderToUserId: (id, reminder) => {
         reminders = reminderModel.getRemindersByUserId(id);
         //reminder.id = reminders.length + 1;
-        reminder.id = Math.max(...(reminders.map(r=>{return r.id}))) + 1;
+        reminder.id = Math.max(...(reminders.map(r => { return r.id }))) + 1;
         reminder.completed = false;
         reminders.push(reminder);
     },
@@ -35,12 +35,26 @@ const reminderModel = {
         reminders.splice(idx, 1);
     },
     getFriendsRemindersList: (uid) => {
-        friendsRemindersList = userModel.getFriendsById(uid).map((u)=>{
+        friendsRemindersList = userModel.getFriendsById(uid).map((u) => {
             reminder = reminderModel.getRemindersByUserId(u.id);
-            return {user: u, reminders: reminder};
+            return { user: u, reminders: reminder };
         })
         return friendsRemindersList;
-    }
+    },
+    addSubtaskByUserIdReminderId: (uid, rid, newSubtask) => {
+        try {
+            reminders = reminderModel.getRemindersByUserId(uid);
+            idx = reminders.findIndex(r => r.id == rid);
+            if (typeof (reminders[idx].subTasks) === 'undefined') {
+                reminders[idx].subTasks = [];
+            }
+            reminders[idx].subTasks.push(newSubtask);
+            console.log(reminders[idx].subTasks)
+        } catch (error) {
+
+        }
+        console.log(reminders[idx].subTasks)
+    },
 }
 
 module.exports = reminderModel;

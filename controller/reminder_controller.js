@@ -65,6 +65,13 @@ const remindersController = {
     reminderModel.deleteReminderByUserIdReminderId(req.user.id, req.params.id)
     res.redirect("/reminder");
   },
+
+  addSubtask: (req, res) => {
+    console.log("reminderController add subtask");
+    console.log(req.user.id, req.params.id, req.body.newSubtask);
+    reminderModel.addSubtaskByUserIdReminderId(req.user.id, req.params.id, req.body.newSubtask);
+    res.redirect(`/reminder/${req.params.id}`);
+  },
 };
 
 module.exports = remindersController;

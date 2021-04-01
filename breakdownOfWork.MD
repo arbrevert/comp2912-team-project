@@ -324,3 +324,31 @@ Mar 27 2021
 (Terry) Reomoving debugging Console Log Statements
 
 
+/*************************************************************
+
+**THANKS TERRY, I WILL TAKE OVER FROM HERE**
+
+*************************************************************/
+
+
+Mar 27 2021
+
+(Jason) Completed tags add/edit/delete
+
+(Jason) Deployed to Heroku
+
+(Jason) Changed SERVERNAME to be configurable in env file
+
+(Jason) Made the following changes. Thanks *Terry*
+  * Replaced single letter variable names
+  * Removed debug lines
+  * Added password confirmation on registration page
+
+
+Mar 31 2021
+
+(Jason) Completed "add subtask"
+
+(Jason) Completed "add or remove friend"
+
+(Jason) Watched the third party API lecture

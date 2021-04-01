@@ -1,7 +1,8 @@
 # progress
 
 ## Mar 31
-* 
+* Completed "add subtask"
+* Completed "add or remove friend"
 
 ## Mar 27
 * Completed tags add/edit/delete

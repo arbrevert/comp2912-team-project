@@ -8,5 +8,6 @@ authRouter.get("/login", authController.login);
 authRouter.get("/logout", authController.logout);
 authRouter.post("/register", authController.registerSubmit);
 authRouter.post("/login", authController.loginSubmit);
+authRouter.post("/manageFriendship", authController.manageFriendship);
 
 module.exports = authRouter;

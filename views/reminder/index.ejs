@@ -31,6 +31,29 @@
 </ul>
 </div>
 
+<div class="container">
+  <h2 class="page-header">Add or remove friendship</h2>
+  <form action=<%= "/auth/manageFriendship/" %> method="POST">
+    <div class="form-group">
+      <label for="friendEmail">Friend's email</label>
+      <input type="email" name="friendEmail" class="form-control" id="friendEmail" placeholder="Friend's email" value="">
+    </div>
+    <div class="form-group">
+      <div class="radio">
+        <label>
+            <input type="radio" name="action" id="add" value="add" checked="checked">
+            add
+        </label>
+        <label>
+            <input type="radio" name="action" id="remove" value="remove">
+            remove
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
 <% if (typeof(friendsRemindersList) !== 'undefined') { %>
   <% friendsRemindersList.forEach((fr) => { %>
   <div class="container">
@@ -53,8 +76,7 @@
       </li>
     <% }) %>
   </ul>
-
+</div>
   <% }); %>
-  </div>
 <% } %>
 

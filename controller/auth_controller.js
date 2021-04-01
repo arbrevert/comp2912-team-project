@@ -37,6 +37,26 @@ const authController = {
       res.render("auth/register", { error: req.flash('error'), navbarIdx: 2, email: req.body.email });
     }
   },
+  manageFriendship: (req, res) => {
+    const action = req.body.action;
+    const friendEmail = req.body.friendEmail;
+    try {
+      if (friendEmail) {
+        switch (action) {
+          case "add":
+            userModel.addFriend(req.user.id, friendEmail);
+            break;
+          case "remove":
+            userModel.removeFriend(req.user.id, friendEmail);
+          default:
+            break;
+        }
+      }
+    } catch (error) {
+    }
+    res.redirect("/reminder/")
+  },
+
 };
 
 module.exports = authController;

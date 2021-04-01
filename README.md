@@ -23,3 +23,5 @@ MORGAN_FORMAT=tiny
 * show user name on navigation bar
 * show reminders of friends on 'Reminder List' page
 * show number of subtasks on list page, details in list one page
+* Add a user as friend on list page
+* Add subtask on list one page

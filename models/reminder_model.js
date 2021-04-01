@@ -43,17 +43,17 @@ const reminderModel = {
     },
     addSubtaskByUserIdReminderId: (uid, rid, newSubtask) => {
         try {
-            reminders = reminderModel.getRemindersByUserId(uid);
-            idx = reminders.findIndex(r => r.id == rid);
-            if (typeof (reminders[idx].subTasks) === 'undefined') {
-                reminders[idx].subTasks = [];
+            if (newSubtask) {
+                reminders = reminderModel.getRemindersByUserId(uid);
+                idx = reminders.findIndex(r => r.id == rid);
+                if (typeof (reminders[idx].subTasks) === 'undefined') {
+                    reminders[idx].subTasks = [];
+                }
+                reminders[idx].subTasks.push(newSubtask);
             }
-            reminders[idx].subTasks.push(newSubtask);
-            console.log(reminders[idx].subTasks)
         } catch (error) {
 
         }
-        console.log(reminders[idx].subTasks)
     },
 }
 
